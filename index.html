@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cats!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="container-fluid">
-        <button id="pet-button" class= "btn btn-success" onclick="pet()">Pet</button>
-        <button class="btn btn-primary" on click="reset()">Reset</button>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12" id="cat-buttons">
+
+
+      </div>
+
     </div>
-    <script src ="app.js" ></script>
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="assets/cat.jpg" id="cat-img" alt="its a cat" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Name:
+          <span id="name">_</span>
+        </h4>
+        <h4>Mood:
+          <span id="mood">_</span>
+        </h4>
+        <h4>Pets:
+          <span id="pets">_</span>
+        </h4>
+      </div>
+      <div class="col-md-6">
+        <button class="btn btn-success" onclick="pet()" id="pet-button">Pet</button>
+        <button class="btn btn-primary" onclick="reset()">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
+
 </html>
